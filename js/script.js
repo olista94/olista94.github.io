@@ -1,10 +1,17 @@
 const username = "olista94";
+const allowedRepos = ["PasswordGenerator", "UVigoRes", "Form_TMDb", "InsertCoin", "TopPadel"];
 
 fetch(`https://api.github.com/users/${username}/repos?sort=updated`)
   .then(res => res.json())
   .then(repos => {
     const container = document.getElementById("project-list");
-    const filtered = repos.filter(repo => !repo.fork && !repo.private);
+    
+    const filtered = repos.filter(repo => 
+      !repo.fork &&
+      !repo.private &&
+      allowedRepos.includes(repo.name)
+    );
+
     filtered.forEach(repo => {
       const col = document.createElement("div");
       col.className = "col-md-4";
