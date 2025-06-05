@@ -1,5 +1,5 @@
 const username = "olista94";
-const allowedRepos = ["PasswordGenerator", "UVigoRes", "Form_TMDb", "InsertCoin", "TopPadel"];
+const allowedRepos = ["PasswordGenerator", "UVigoRes", "Form_TMDb", "InsertCoin", "TopPadel", "To-Do-List"];
 
 fetch(`https://api.github.com/users/${username}/repos?sort=updated`)
   .then(res => res.json())
