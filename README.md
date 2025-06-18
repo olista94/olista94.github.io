@@ -20,5 +20,3 @@ Actualmente me encuentro desarrollando soluciones prácticas como sistemas de ge
 - JavaScript
 - GitHub REST API (para cargar automáticamente los repositorios destacados)
 - GitHub Pages para despliegue
-
-## 🧩 Estructura del proyecto
